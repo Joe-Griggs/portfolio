@@ -13,9 +13,14 @@
 
         @include project-card;
 
-        :hover {
+        &:hover {
             color: $hover;
             border-radius: 4px;
+
+            img {
+                background-color: $hover;
+                mix-blend-mode: multiply;
+            }
         }
     }
 
