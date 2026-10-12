@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: $bg-main;
+    color: $primary;
+
+    font-family: $font-main;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    // text-decoration: none;
+    color: inherit;
+}
+
+button,
+input {
+    font: inherit;
+}

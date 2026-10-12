@@ -1,0 +1,33 @@
+$primary: #323341;
+$secondary: #54AFCF;
+$hover: #ADAFB0;
+$bg-main: #fff;
+$bg-secondary: #f5f5f5;
+
+$font-main: Arial, sans-serif;
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+
+@mixin project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 10vh;
+
+    h4, p {
+        margin: 0;
+        justify-self: center;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+        padding: 1rem 0 0 0;
+    }
+
+    p {
+        padding-bottom: 0.7rem;
+    }
+}

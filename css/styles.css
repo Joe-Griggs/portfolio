@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #323341;
+  font-family: Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.side-nav {
+  display: none;
+}
+
+.banner {
+  background: url("../img/banner-img.jpg") center/cover;
+  height: 50vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner .name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.banner .name h1 {
+  margin: 0;
+  font-size: 3.5rem;
+  color: #323341;
+  text-align: center;
+}
+.banner .name p {
+  margin: 1em auto;
+  font-size: 1.8rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  margin: 5%;
+}
+.projects > a {
+  display: block;
+  align-self: stretch;
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 10vh;
+}
+.projects > a h4, .projects > a p {
+  margin: 0;
+  justify-self: center;
+}
+.projects > a h4 {
+  font-size: 1.8rem;
+  padding: 1rem 0 0 0;
+}
+.projects > a p {
+  padding-bottom: 0.7rem;
+}
+.projects > a :hover {
+  color: #ADAFB0;
+  border-radius: 4px;
+}
+.projects .arrow {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-left: 2px;
+  vertical-align: middle;
+  fill: currentColor;
+}
+
+/*# sourceMappingURL=styles.css.map */
