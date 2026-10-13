@@ -18,8 +18,8 @@
             border-radius: 4px;
 
             img {
-                background-color: $hover;
-                mix-blend-mode: multiply;
+                filter: brightness(0.8);
+                border-radius: 6px;
             }
         }
     }
