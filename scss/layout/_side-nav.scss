@@ -1,3 +1,75 @@
 .side-nav {
     display: none;
 }
+
+@media (min-width: $breakpoint-extra-large) {
+    .side-nav {
+        height: 100vh;
+        width: 10%;
+        position: fixed;
+        z-index: 1;
+
+        display: flex;
+        flex-direction: column;
+        
+        border-right: 3px solid $secondary;
+        background-color: $bg-main;
+
+        #logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 15%;
+            width: 100%;
+
+            border-bottom: 3px solid $secondary;
+
+            p {
+                font-size: 6rem;
+                font-weight: bold;
+                color: $primary;
+            }
+        }
+
+        #nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            gap: 2rem;
+            margin-top: 40%;
+            margin-bottom: 20%;
+
+            a {
+                color: $primary;
+                text-decoration: none;
+                font-size: 1.3rem;
+                font-weight: bold;
+
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-offset: 8px;
+                }
+            }
+        }
+
+        #contact-me {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-top: 3px solid $secondary;
+            border-bottom: 3px solid $secondary;
+            height: 5%;
+
+            a {
+                color: $primary;
+                text-decoration: none;
+                font-size: 1.3rem;
+                font-weight: bold;
+            }
+        }
+    }
+}

@@ -32,4 +32,33 @@
         vertical-align: middle;
         fill: currentColor;
     }
+
+    @media (min-width: $breakpoint-large) {
+        grid-template-columns: repeat(2, 1fr);
+
+        > a:has(#project-one) {
+            grid-column: 1 / 3;
+            grid-row: 1;
+        }
+
+        > a:has(#project-two) {
+            grid-column: 1 / 3;
+            grid-row: 2;
+        }
+    }
+
+    @media (min-width: $breakpoint-extra-large) {
+        margin-left: 15%;
+ 
+        grid-template-columns: repeat(3, 1fr);
+
+        > a:has(#project-one) {
+            grid-column: 1 / 2;
+            grid-row: 1;
+        }
+        > a:has(#project-two) {
+            grid-column: 2 / 3;
+            grid-row: 1;
+        }
+    }
 }
