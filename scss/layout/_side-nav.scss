@@ -1,5 +1,11 @@
 .side-nav {
     display: none;
+
+    #logo {
+        a {
+            text-decoration: none;
+        }
+    }
 }
 
 @media (min-width: $breakpoint-extra-large) {
