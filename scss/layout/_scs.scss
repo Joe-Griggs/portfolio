@@ -1,0 +1,63 @@
+.scs-scheme-info {
+    margin:5%;
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    p, ul{
+        font-size: 1.3rem;
+    }
+
+    .about-netmatters {
+        p {
+            margin-bottom: 0;
+        }
+
+        ul {
+            padding:5%;
+            margin:0;
+        }
+    }
+
+    @media (min-width: $breakpoint-medium) {
+    
+        h3 {
+            font-size: 4rem;
+        }
+
+        p, ul{
+            font-size: 1.8rem;
+        }
+    }
+
+    @media (min-width: $breakpoint-extra-large) {
+        margin-left: 15%;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3%;
+
+        h3 {
+            font-size: 3rem;
+        }
+
+        p, ul{
+            font-size: 1.7rem;
+        }
+
+        div {
+            border-bottom: 4px solid $secondary;
+        }
+
+        .about-netmatters {
+
+            ul {
+                padding-left:2%;
+                padding-top: 2%;
+                padding-bottom: 2%;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,43 @@
+.coding-examples-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .coming-soon {
+        text-align: center;
+        margin: 55% 0;
+
+        h3 {
+            font-size: 4em;
+        }
+
+        p {
+            font-size: 1.3rem;
+        }
+    }
+
+    @media (min-width: $breakpoint-large) {
+        .coming-soon {
+            
+            h3 {
+                font-size: 6rem;
+            }
+
+            p {
+                font-size: 2.8rem;
+            }
+        }
+    }
+    @media (min-width: $breakpoint-extra-large) {
+        margin-left: 15%;
+        padding-right: 5%;
+
+        .coming-soon {
+            margin: 20% 0;
+        }
+
+        div {
+            border-bottom: 4px solid $secondary;
+        }   
+    }
+}

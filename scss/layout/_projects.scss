@@ -19,6 +19,7 @@
 
             img {
                 filter: brightness(0.8);
+                box-shadow: 0 0 25px rgba($hover, 0.9);
                 border-radius: 6px;
             }
         }
