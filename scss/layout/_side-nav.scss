@@ -32,9 +32,11 @@
             border-bottom: 3px solid $secondary;
 
             p {
-                font-size: 6rem;
+                font-size: clamp(3rem, 6vw, 6rem);
                 font-weight: $font-weight-bold;
                 color: $primary;
+                align-text: center;
+                padding: 1%
             }
         }
 
@@ -53,6 +55,7 @@
                 text-decoration: none;
                 font-size: 1.3rem;
                 font-weight: $font-weight-bold;
+                text-align: center;
 
                 &:hover {
                     text-decoration: underline;
@@ -75,12 +78,14 @@
                 text-decoration: none;
                 font-size: 1.3rem;
                 font-weight: $font-weight-extra-bold;
+                text-align: center;
             }
         }
 
         #social-btn {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             margin-top: 10%;
             gap: 1rem;
 
