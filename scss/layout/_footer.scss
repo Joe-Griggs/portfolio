@@ -62,6 +62,7 @@ footer {
             textarea {
                 min-width: 0;
                 width: 100%;
+                font-family: inherit;
             }
 
             #fname {
@@ -182,7 +183,7 @@ footer {
     @media (min-width: $breakpoint-extra-large) {
         margin-left: 11%;
         display: grid;
-        grid-template-columns: 1fr 34% 33%;
+        grid-template-columns: 1fr 26% 25%;
 
         .contact-form {
             grid-column: 2 / 4;
@@ -197,17 +198,23 @@ footer {
             grid-column: 1;
             margin-top: 1.7rem;
             margin-left: 10%;
+            margin-right: 10%;
 
             .contact-email {
-                font-size: 1.6rem;
+                font-size: clamp(1.5rem, 2vw, 2.5rem); //clamp so it changes size comparable to the view width
+                margin-right: 0;
+                margin-left: 0;
+                text-align: center;
             }
         }
 
-        .back-to-top {
+        .back-to-top { // span the whole grid width so the text can be centered
             display:block;
-            grid-column: 2 / 3;
+            grid-column: 1 / 4;
             margin-top: 5rem;
-            margin-right: 35%;
+            margin-right:2%;
+            justify-self: center;
         }
     }
+
 }
