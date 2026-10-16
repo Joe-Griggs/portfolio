@@ -11,7 +11,7 @@
 @media (min-width: $breakpoint-extra-large) {
     .side-nav {
         height: 100vh;
-        width: 10%;
+        width: clamp(150px, 15%, 200px);
         position: fixed;
         z-index: 1;
 

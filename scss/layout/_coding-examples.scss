@@ -17,7 +17,9 @@
     }
 
     @media (min-width: $breakpoint-large) {
+
         .coming-soon {
+            margin: 20% 0;
             
             h3 {
                 font-size: 6rem;
@@ -28,6 +30,7 @@
             }
         }
     }
+
     @media (min-width: $breakpoint-extra-large) {
         margin-left: 15%;
         padding-right: 5%;

@@ -86,7 +86,7 @@ input {
 @media (min-width: 1200px) {
   .side-nav {
     height: 100vh;
-    width: 10%;
+    width: clamp(150px, 15%, 200px);
     position: fixed;
     z-index: 1;
     display: flex;
@@ -580,6 +580,9 @@ footer .contact-form form .submit-btn button:hover {
   font-size: 1.3rem;
 }
 @media (min-width: 992px) {
+  .coding-examples-info .coming-soon {
+    margin: 20% 0;
+  }
   .coding-examples-info .coming-soon h3 {
     font-size: 6rem;
   }
