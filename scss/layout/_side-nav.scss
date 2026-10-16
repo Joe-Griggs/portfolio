@@ -80,6 +80,11 @@
                 font-size: 1.3rem;
                 font-weight: $font-weight-extra-bold;
                 text-align: center;
+
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-offset: 8px;
+                }
             }
         }
 
