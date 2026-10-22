@@ -8,6 +8,10 @@
     }
 }
 
+.side-nav.active {
+    display: block;
+}
+
 @media (min-width: $breakpoint-extra-large) {
     .side-nav {
         height: 100vh;

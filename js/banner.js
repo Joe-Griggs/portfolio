@@ -14,3 +14,13 @@ function typeEffect() {
 }
 
 typeEffect();
+
+
+// Hamburger pop out
+
+const button = document.querySelector('#nav-toggle');
+const nav = document.querySelector('.side-nav')
+
+button.addEventListener('click', function() {
+    nav.classList.toggle('active');
+});
