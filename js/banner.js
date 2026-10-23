@@ -19,15 +19,15 @@ typeEffect();
 // Hamburger pop out
 
 const button = document.querySelector('#nav-toggle');
-const nav = document.querySelector('.side-nav')
-const close = document.querySelector('#logo-initials')
+const nav = document.querySelector('.side-nav');
+const close = document.querySelector('#logo-initials');
 
 close.removeAttribute('href');
 
 button.addEventListener('click', function() {
-    nav.classList.add('active');
+    nav.style.transform = 'translateX(0)';
 });
 
 close.addEventListener('click', function() {
-    nav.classList.remove('active');
+    nav.style.transform = 'translateX(-100%)';
 });
