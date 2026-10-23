@@ -103,6 +103,7 @@ input {
   font-weight: 700;
   color: #323341;
   padding: 1%;
+  cursor: default;
 }
 .side-nav #nav {
   display: flex;
@@ -125,9 +126,6 @@ input {
 .side-nav #nav a:hover {
   text-decoration: underline;
   text-underline-offset: 8px;
-}
-.side-nav #nav .closeBtn {
-  color: red;
 }
 .side-nav #contact-me {
   display: flex;

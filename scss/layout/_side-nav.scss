@@ -27,6 +27,7 @@
             font-weight: $font-weight-bold;
             color: $primary;
             padding: 1%;
+            cursor: default;
         }
     }
 
@@ -54,9 +55,6 @@
             }
         }
 
-        .closeBtn {
-            color: red;
-        }
     }
 
     #contact-me {
