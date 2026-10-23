@@ -126,6 +126,9 @@ input {
   text-decoration: underline;
   text-underline-offset: 8px;
 }
+.side-nav #nav .closeBtn {
+  color: red;
+}
 .side-nav #contact-me {
   display: flex;
   justify-content: center;

@@ -20,7 +20,14 @@ typeEffect();
 
 const button = document.querySelector('#nav-toggle');
 const nav = document.querySelector('.side-nav')
+const close = document.querySelector('#logo-initials')
+
+close.removeAttribute('href');
 
 button.addEventListener('click', function() {
-    nav.classList.toggle('active');
+    nav.classList.add('active');
+});
+
+close.addEventListener('click', function() {
+    nav.classList.remove('active');
 });
