@@ -117,7 +117,7 @@ input {
 }
 .side-nav #logo p {
   margin: 0;
-  font-size: 3.6rem;
+  font-size: clamp(3.6rem, 8vw, 6.6rem);
   font-weight: 700;
   color: #323341;
   padding: 1%;
