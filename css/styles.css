@@ -155,7 +155,7 @@ input {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 10%;
+  margin: 10% 0;
   gap: 1rem;
 }
 .side-nav #social-btn svg {
@@ -177,6 +177,7 @@ input {
     flex-direction: column;
     border-right: 3px solid #003806;
     background-color: #fff;
+    transform: translateX(0);
   }
   .side-nav #logo {
     display: flex;

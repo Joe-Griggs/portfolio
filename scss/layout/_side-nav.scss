@@ -90,7 +90,7 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin-top: 10%;
+        margin: 10% 0;
         gap: 1rem;
 
         svg {
@@ -118,6 +118,8 @@
         
         border-right: 3px solid $secondary;
         background-color: $bg-main;
+
+        transform: translateX(0);
 
         #logo {
             display: flex;
