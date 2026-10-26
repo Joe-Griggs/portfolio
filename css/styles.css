@@ -88,8 +88,12 @@ input {
   transform: translateX(-100%);
   transition: transform 0.4s ease;
 }
+.side-nav.is-open {
+  transform: translateX(0);
+}
 .side-nav #logo {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   min-height: 15%;
@@ -98,6 +102,18 @@ input {
 }
 .side-nav #logo a {
   text-decoration: none;
+}
+.side-nav #logo #close-nav {
+  position: absolute;
+  top: 0.05rem;
+  right: 0.05rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 0;
+  background: transparent;
+  color: #323341;
+  font-size: 2rem;
+  cursor: pointer;
 }
 .side-nav #logo p {
   margin: 0;
@@ -186,6 +202,9 @@ input {
     height: 15%;
     width: 100%;
     border-bottom: 3px solid #003806;
+  }
+  .side-nav #logo #close-nav {
+    display: none;
   }
   .side-nav #logo p {
     font-size: clamp(3rem, 6vw, 6rem);

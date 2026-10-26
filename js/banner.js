@@ -20,14 +20,13 @@ typeEffect();
 
 const button = document.querySelector('#nav-toggle');
 const nav = document.querySelector('.side-nav');
-const close = document.querySelector('#logo-initials');
+const close = document.querySelector('#close-nav');
 
-close.removeAttribute('href');
-
-button.addEventListener('click', function() {
-    nav.style.transform = 'translateX(0)';
+button.addEventListener('change', function() {
+    nav.classList.toggle('is-open', button.checked);
 });
 
 close.addEventListener('click', function() {
-    nav.style.transform = 'translateX(-100%)';
+    button.checked = false;
+    nav.classList.remove('is-open');
 });
