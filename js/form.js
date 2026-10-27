@@ -1,18 +1,19 @@
 //Email validation
-let regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-let email = document.querySelector('#email');
+let regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; //regex for emails
+let email = document.querySelector('#email'); //assigns the content in the email box to email
 
-email.addEventListener('blur', function () {
-    if (email.value.trim() === '') {
+email.addEventListener('blur', function () { //blur makes it so it doesnt check before someone has used the box
+    if (email.value.trim() === '') { //trims the spaces off the ends if there are any
         return;
     }
 
-    if (regex.test(email.value.trim())) {
+    if (regex.test(email.value.trim())) { //compares the regex to the returned trimmed email
         console.log('Valid email address');
     } else {
         alert('Invalid email address');
     }
 });
+
 
 //Phone validation
 let phoneRegex = /^\d{10}$/;
@@ -28,4 +29,19 @@ phone.addEventListener('blur', function () {
     } else {
         alert("Invalid phone number");
     }
+});
+
+// Form validation
+let form = document.querySelector('.contact-form');
+
+form.addEventListener('submit', function (event) {
+
+    if (!regex.test(email.value.trim())) {
+        event.preventDefault();
+    }
+
+    if (!phoneRegex.test(phone.value.trim())) {
+        event.preventDefault();
+    }
+
 });
