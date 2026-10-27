@@ -8,7 +8,7 @@
     flex-direction: column;
     background-color: $bg-main;
 
-    transform: translateX(-100%);
+    transform: translateX(calc(-100% - 1px));
     transition: transform 0.4s ease;
 
     &.is-open {
@@ -120,6 +120,13 @@
             }
         }
     }
+}
+
+@media (min-width: $breakpoint-medium) {
+    .side-nav {
+        width: clamp(250px, 35vw, 400px);
+    }
+
 }
 
 

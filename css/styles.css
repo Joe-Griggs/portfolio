@@ -85,7 +85,7 @@ input {
   z-index: 2;
   flex-direction: column;
   background-color: #fff;
-  transform: translateX(-100%);
+  transform: translateX(calc(-100% - 1px));
   transition: transform 0.4s ease;
 }
 .side-nav.is-open {
@@ -183,6 +183,11 @@ input {
   fill: #323341;
 }
 
+@media (min-width: 768px) {
+  .side-nav {
+    width: clamp(250px, 35vw, 400px);
+  }
+}
 @media (min-width: 1200px) {
   .side-nav {
     height: 100vh;
@@ -321,6 +326,7 @@ input {
   align-self: flex-start;
   justify-content: flex-start;
   align-items: flex-start;
+  position: fixed;
 }
 .banner #side-nav-btn #nav-toggle {
   display: none;
@@ -524,13 +530,19 @@ footer .contact-form form #email {
   grid-column: 1/3;
   grid-row: 2;
 }
-footer .contact-form form #subject {
+footer .contact-form form .email-error {
   grid-column: 1/3;
   grid-row: 3;
+  color: #c00;
+  font-size: clamp(0.9rem, 4vw, 2.2rem);
+}
+footer .contact-form form #subject {
+  grid-column: 1/3;
+  grid-row: 4;
 }
 footer .contact-form form #text-box {
   grid-column: 1/3;
-  grid-row: 4;
+  grid-row: 5;
 }
 footer .contact-form form input, footer .contact-form form textarea {
   background-color: #e2e2e2;
@@ -541,7 +553,7 @@ footer .contact-form form input, footer .contact-form form textarea {
 }
 footer .contact-form form .submit-btn {
   grid-column: 1/3;
-  grid-row: 5;
+  grid-row: 6;
 }
 footer .contact-form form .submit-btn button {
   display: block;
