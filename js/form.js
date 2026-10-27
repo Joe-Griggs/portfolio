@@ -32,12 +32,12 @@ phone.addEventListener('blur', function () {
 });
 
 // Form validation
-let form = document.querySelector('.contact-form');
+let form = document.querySelector('.contact-form');//Assigns the contact form to form
 
-form.addEventListener('submit', function (event) {
+form.addEventListener('submit', function (event) { //listens for when the user clicks submit
 
-    if (!regex.test(email.value.trim())) {
-        event.preventDefault();
+    if (!regex.test(email.value.trim())) { // checks the email against the regex and prevents the submit if it doesnt comply with the regex
+        event.preventDefault(); // prevents default(submitting with the button)
     }
 
     if (!phoneRegex.test(phone.value.trim())) {
