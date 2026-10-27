@@ -3,6 +3,7 @@ let regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; //regex for emai
 let email = document.querySelector('#email'); //assigns the content in the email box to email
 
 email.addEventListener('blur', function () { //blur makes it so it doesnt check before someone has used the box
+    let messages = []
     if (email.value.trim() === '') { //trims the spaces off the ends if there are any
         return;
     }
@@ -10,26 +11,26 @@ email.addEventListener('blur', function () { //blur makes it so it doesnt check 
     if (regex.test(email.value.trim())) { //compares the regex to the returned trimmed email
         console.log('Valid email address');
     } else {
-        alert('Invalid email address');
+        messages.push ('Invalid email address')
     }
 });
 
 
-//Phone validation
-let phoneRegex = /^\d{10}$/;
-let phone = document.querySelector('#phone');
+// //Phone validation
+// let phoneRegex = /^\d{10}$/;
+// let phone = document.querySelector('#phone');
 
-phone.addEventListener('blur', function () {
-    if (phone.value.trim() === '') {
-        return;
-    }
+// phone.addEventListener('blur', function () {
+//     if (phone.value.trim() === '') {
+//         return;
+//     }
 
-    if (phoneRegex.test(phone.value.trim())) {
-        console.log("Valid phone number");
-    } else {
-        alert("Invalid phone number");
-    }
-});
+//     if (phoneRegex.test(phone.value.trim())) {
+//         console.log("Valid phone number");
+//     } else {
+//         alert("Invalid phone number");
+//     }
+// });
 
 // Form validation
 let form = document.querySelector('.contact-form');//Assigns the contact form to form
@@ -40,8 +41,8 @@ form.addEventListener('submit', function (event) { //listens for when the user c
         event.preventDefault(); // prevents default(submitting with the button)
     }
 
-    if (!phoneRegex.test(phone.value.trim())) {
-        event.preventDefault();
-    }
+    // if (!phoneRegex.test(phone.value.trim())) {
+    //     event.preventDefault();
+    // }
 
 });
